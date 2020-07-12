@@ -14,6 +14,20 @@
 
 ### 🏠 [Homepage](https://github.com/Zaedus/Database-Viewer#readme)
 
+## Build
+
+Install the packages with 
+
+```sh
+npm install
+```
+
+Then run the build tool with
+
+```sh
+npm run electron-toolkit
+```
+
 ## Install
 
 Use the prebuilt binaries [here](about:blank).

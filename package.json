@@ -1,0 +1,71 @@
+{
+    "name": "database-viewer",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "start": "electron .",
+        "electron-toolkit": "electron ./node_modules/electron-toolkit --no-sandbox"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "electron-store": "^5.2.0",
+        "exceljs": "^4.0.1",
+        "hasha": "^5.2.0",
+        "uuid": "^8.2.0"
+    },
+    "devDependencies": {
+        "electron": "^9.0.5",
+        "electron-builder": "^22.7.0",
+        "electron-toolkit": "^1.0.24"
+    },
+    "build": {
+        "appId": "xyz.zaedus.databaseviewer",
+        "copyright": "Copyright © 2020 ",
+        "productName": "Database Viewer",
+        "electronVersion": "9.0.5",
+        "asar": true,
+        "directories": {
+            "app": "C:\\Users\\cole\\OneDrive\\Projects\\electron\\databaseviewer",
+            "output": "dist"
+        },
+        "win": {
+            "target": [
+                {
+                    "target": "nsis",
+                    "arch": [
+                        "x64"
+                    ]
+                }
+            ]
+        },
+        "mac": {
+            "category": "",
+            "target": [
+                {
+                    "target": "dmg",
+                    "arch": [
+                        "x64"
+                    ]
+                }
+            ]
+        },
+        "linux": {
+            "target": [
+                {
+                    "target": "AppImage",
+                    "arch": [
+                        "x64"
+                    ]
+                },
+                {
+                    "target": "debian package (deb)",
+                    "arch": [
+                        "x64"
+                    ]
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script>
+			if (typeof module === "object") {
+				window.module = module;
+				module = undefined;
+			}
+		</script>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=1, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="../../../semantic/semantic.min.css"
+		/>
+		<link rel="stylesheet" type="text/css" href="viewer.css" />
+
+		<script
+			src="https://code.jquery.com/jquery-3.1.1.min.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="../../../semantic/semantic.min.js"></script>
+	</head>
+
+	<body>
+		<h4 class="ui horizontal divider header">
+			<i class="filter icon"></i>
+			Filters
+		</h4>
+		<br />
+		<div class="ui container" id="filter"></div>
+		<div class="ui container centered">
+			<div class="ui one column stackable center aligned page grid">
+				<div class="column twelve wide">
+					<button class="ui animated button" id="newfilter">
+						<div class="visible content">
+							<i class="up plus icon"></i>
+						</div>
+						<div class="hidden content">New</div>
+					</button>
+				</div>
+			</div>
+		</div>
+		<br />
+		<h4 class="ui horizontal divider header">
+			<i class="file icon"></i>
+			Values
+		</h4>
+		<br />
+		<div class="ui container">
+			<div
+				class="ui selection dropdown fluid search multiple"
+				id="values"
+				multiple=""
+			>
+				<input type="hidden" name="values" />
+				<i class="dropdown icon"></i>
+				<div class="default text">Values</div>
+				<div class="menu"></div>
+			</div>
+		</div>
+
+		<br />
+		<br />
+
+		<div class="ui one column stackable center aligned page grid">
+			<div class="column twelve wide">
+				<button class="ui button primary" id="create">
+					<i class="ui icon plus square"></i>
+					Create
+				</button>
+			</div>
+		</div>
+		<br />
+		<h3 class="ui horizontal divider header">
+			<i class="table icon"></i>
+			Data
+		</h3>
+
+		<div class="ui container" id='datacontainer'>
+			
+		</div>
+		<br><br><br><br><br>
+		<div class="ui active dimmer">
+			<div class="ui indeterminate text loader">Loading...</div>
+		</div>
+	</body>
+
+	<head>
+		<script src="viewer.js"></script>
+	</head>
+</html>

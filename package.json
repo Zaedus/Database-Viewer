@@ -41,7 +41,6 @@
             ]
         },
         "mac": {
-            "category": "",
             "target": [
                 {
                     "target": "dmg",
@@ -49,7 +48,8 @@
                         "x64"
                     ]
                 }
-            ]
+            ],
+            "category": ""
         },
         "linux": {
             "target": [

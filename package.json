@@ -21,7 +21,7 @@
         "electron-toolkit": "^1.0.24"
     },
     "build": {
-        "appId": "xyz.zaedus.databaseviewer",
+        "appId": "xyz.zaedus.database-viewer",
         "copyright": "Copyright © 2020 ",
         "productName": "Database Viewer",
         "electronVersion": "9.0.5",
@@ -49,7 +49,7 @@
                     ]
                 }
             ],
-            "category": ""
+            "category": "public.app-category.productivity"
         },
         "linux": {
             "target": [

@@ -1,73 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <script>
-            if (typeof module === "object") {
-                window.module = module;
-                module = undefined;
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Database Viewer</title>
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="../../../semantic/semantic.min.css"
-        />
-        <link rel="stylesheet" type="text/css" href="main.css" />
 
-        <script
-            src="https://code.jquery.com/jquery-3.1.1.min.js"
-            crossorigin="anonymous"
-        ></script>
-        <script src="../../../semantic/semantic.min.js"></script>
-    </head>
+<head>
+    <script>
+        if (typeof module === "object") {
+            window.module = module;
+            module = undefined;
+        }
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Database Viewer</title>
+    <link rel="stylesheet" type="text/css" href="../../../semantic/semantic.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../semantic/icon.min.css" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
 
-    <body>
-        <div class="ui placeholder segment" id="fullscreen">
-            <div class="ui two column stackable center aligned grid">
-                <div class="ui vertical divider">Or</div>
-                <div class="middle aligned row">
-                    <div class="column">
-                        <div class="ui icon header">
-                            <i class="excel file outline icon"></i>
-                        </div>
-                        <label
-                            class="ui primary button"
-                            id="uploadbtn"
-                            for="fileupload"
-                            >Upload Database</label
-                        >
-                        <input
-                            type="file"
-                            id="fileupload"
-                            accept=".xlsx,.csv"
-                            style="display: none;"
-                        />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+    <script src="../../../semantic/semantic.min.js"></script>
+</head>
+
+<body>
+    <div class="ui placeholder segment" id="fullscreen">
+        <div class="ui two column stackable center aligned grid">
+            <div class="ui vertical divider">Or</div>
+            <div class="middle aligned row">
+                <div class="column">
+                    <div class="ui icon header">
+                        <i class="excel file outline icon"></i>
                     </div>
-                    <div class="column">
-                        <div
-                            class="ui relaxed divided list selection"
-                            style="padding: 20px; text-align: left;"
-                            id="files"
-                        >
-                        </div>
-                        <button class="ui button" id='clear'>
-                            Clear
-                        </button>
+                    <label class="ui primary button" id="uploadbtn" for="fileupload">Upload Database</label>
+                    <input type="file" id="fileupload" accept=".xlsx,.csv" style="display: none;" />
+                </div>
+                <div class="column">
+                    <div class="ui relaxed divided list selection" style="padding: 20px; text-align: left;" id="files">
                     </div>
+                    <button class="ui button" id='clear'>
+                        Clear
+                    </button>
                 </div>
             </div>
         </div>
-        <div class="ui disabled dimmer" id="fullscreen">
-            <div class="ui indeterminate text loader">
-                Parsing File
-            </div>
+    </div>
+    <div class="ui disabled dimmer" id="fullscreen">
+        <div class="ui indeterminate text loader">
+            Parsing File
         </div>
-    </body>
+    </div>
+</body>
 
-    <head>
-        <script src="main.js"></script>
-    </head>
+<head>
+    <script src="main.js"></script>
+</head>
+
 </html>

@@ -30,7 +30,7 @@ npm run electron-toolkit
 
 ## Install
 
-Use the prebuilt binaries [here](about:blank).
+Use the prebuilt binaries [here](https://github.com/Zaedus/Database-Viewer/releases/tag/1.0.0).
 
 ## Author
 

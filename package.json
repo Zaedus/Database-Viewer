@@ -13,11 +13,12 @@
         "electron-store": "^5.2.0",
         "exceljs": "^4.0.1",
         "hasha": "^5.2.0",
-        "uuid": "^8.2.0"
+        "uuid": "^8.2.0",
+        "jpeg-js": ">=0.4.0"
     },
     "devDependencies": {
-        "electron": "^9.0.5",
-        "electron-builder": "^22.7.0",
+        "electron": "^9.2.1",
+        "electron-builder": "^22.8.0",
         "electron-toolkit": "^1.0.24"
     },
     "build": {
